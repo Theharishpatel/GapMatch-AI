@@ -1,0 +1,42 @@
+
+@use "./style/button.scss";
+
+
+#root{
+   // 1. Colors
+--color-primary: #4F46E5;    // Indigo
+--color-primary-dark: #4338CA; 
+--color-success: #10B981;    // Emerald Green
+--color-gap-accent: #F59E0B; // Amber Gold
+--color-bg-light: #F8FAFC;   // Ghost White
+--color-text-main: #1E293B;  // Slate Dark
+--color-sidebar-bg: #1E293B;
+
+// 2. Light variants for Cards/Alerts 
+--color-success-light: #D1FAE5;
+--color-gap-light: #FEF3C7;
+
+// 3. Typography
+--font-main: 'Inter', sans-serif;
+--font-heading: 'Plus Jakarta Sans', sans-serif;
+
+// 4. Transitions & Shadows
+--shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+--shadow-md: 0 4px 6px 1.5px rgba(0, 0, 0, 0.2);
+--transition-fast: all 0.3s ease;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,
+body, #root{
+    width: 100%;
+    background-color: var(--color-bg-light);
+    color: var(--color-text-main);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
