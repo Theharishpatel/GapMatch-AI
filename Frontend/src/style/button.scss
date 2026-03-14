@@ -1,0 +1,26 @@
+.button{
+    border: none;
+    outline: none;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding-inline: 1.5rem;
+    padding-block: 0.75rem;
+    border-radius: 0.75rem;
+    transition: var(--ransition-fast);
+    cursor: pointer;
+    
+
+
+    &.primary-button{
+        background-color: var(--color-primary);
+        color: var(--color-bg-light);
+
+        &:hover{
+            background-color: var(--color-primary-dark);
+        }
+    }
+
+    &:active{
+        transform: scale(0.98);
+    }
+}
