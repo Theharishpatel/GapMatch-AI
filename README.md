@@ -1,17 +1,12 @@
-Bhai, aapke is detailed content ko maine ek high-quality, professional **README.md** file mein convert kar diya hai. Isme maine proper formatting, icons, aur structure use kiya hai jo GitHub par ek Senior Developer ki profile ko suite karta hai.
 
-Isko copy karke apni root directory ki `README.md` mein paste kar lo:
 
----
-
-```markdown
-# 🚀 GapMatch: AI-Powered Skill Gap Analysis Tool
+#  GapMatch: AI-Powered Skill Gap Analysis Tool
 
 **GapMatch** is a sophisticated full-stack application designed to bridge the void between a candidate's current profile and the specific requirements of a Job Description (JD). By leveraging AI, GapMatch identifies missing keywords, matches core competencies, and provides a clear roadmap for candidates to become "job-ready."
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 In the current job market, most resumes fail to pass through **ATS (Applicant Tracking Systems)** because of a mismatch in keywords and skills. GapMatch automates the analysis process, giving users a competitive advantage by highlighting exactly what is missing from their profile to match a specific role.
 
@@ -19,7 +14,7 @@ In the current job market, most resumes fail to pass through **ATS (Applicant Tr
 
 ---
 
-## 🗺️ User Story & Application Flow
+##  User Story & Application Flow
 
 The following architectural journey defines the user experience within GapMatch:
 
@@ -102,8 +97,6 @@ GAPMATCH-AI/
     └── package.json
 ```
 
----
-
 ## 🔧 Installation & Setup
 
 ### 1. Clone & Install Client
@@ -144,7 +137,7 @@ cd client && npm run dev
 
 ---
 
-## 📈 Roadmap
+##  Roadmap
 
 * [x] **Phase 1:** Robust Authentication & Global Context.
 * [ ] **Phase 2:** PDF Parsing & JD text extraction.
