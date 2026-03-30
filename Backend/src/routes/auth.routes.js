@@ -3,9 +3,7 @@ const authController = require("../controllers/auth.controller")
 const authMiddleware = require("../middlewares/auth.middleware")
 
 const authRouter = Router()
-
-
-module.exports = authRouter
+                    
 
 /**
  * @route POST /api/auth/register
