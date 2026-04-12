@@ -1,12 +1,10 @@
-const { GoogleGenAI } = require("@google/genai")
-const { z } = require("zod")
-const { zodToJsonSchema } = require("zod-to-json-schema")
-
+const { GoogleGenAI } = require("@google/genai");
+const { z } = require("zod");
+const { zodToJsonSchema } = require("zod-to-json-schema");
 
 const ai = new GoogleGenAI({
-    apiKey: process.env.GOOGLE_GENAI_API_KEY
-})
-
+  apiKey: process.env.GOOGLE_GENAI_API_KEY,
+});
 
 const interviewReportSchema = z.object({
     matchScore: z.number().describe("A score between 0 and 100 indicating how well the candidate's profile matches the job describe"),
@@ -32,38 +30,24 @@ const interviewReportSchema = z.object({
     title: z.string().describe("The title of the job for which the interview report is generated"),
 })
 
-async function generateInterviewReport({ resume, selfDescription, jobDescription }) {
+async function generateInterviewReport({ resume, selfDescription, jobDescription}) {
 
-
-    const prompt = `Generate an interview report :
-                       
+    const prompt = `Generate an interview report for a candidate with the following details:
+                        Resume: ${resume}
+                        Self Description: ${selfDescription}
+                        Job Description: ${jobDescription}
 `
 
-    const response = await ai.models.generateContent({
-        model: "gemini-3-flash-preview",
-        contents: prompt,
-        config: {
-            responseMimeType: "application/json",
-            responseSchema: zodToJsonSchema(interviewReportSchema),
-        }
-    })
+  const response = await ai.models.generateContent({
+    model: "gemini-3-flash-preview",
+    contents: prompt,
+    config:{
+        responseMimeType:"application/json",
+        responseSchema: zodToJsonSchema(interviewReportSchema)
+    }
+  })
 
-    return JSON.parse(response.text)
-
-
+  return JSON.parse(response.text)
 }
 
-// async function invokeGeminiAI() {
-//     const response = await ai.models.generateContent({
-//         model : "gemini-2.5-flash",
-//         contents: "hello gemini ! explain me interview process of ibm "
-
-//     })
-
-//     console.log(response.text)
-// }
-
-
-
-
-module.exports = { generateInterviewReport  }
+module.exports = generateInterviewReport;

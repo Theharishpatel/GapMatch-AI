@@ -1,207 +1,143 @@
-const selfDescription = `
-      I am a passionate Full Stack Developer with around 6 months of hands-on experience in building modern web applications using the MERN stack. I enjoy solving real-world problems through clean and efficient code. I have experience developing responsive user interfaces, creating REST APIs, and working with databases. I am always eager to learn new technologies and improve my development skills while contributing to impactful projects.
-    `;
+// temp.js
 
 const resume = `
-      Name: Arjun Sharma
-Phone: +91 98765 43210
-Email: arjun.sharma.dev@gmail.com
+Name: Harish Patel
+Phone: +91 8435310964
+Email: harishpatel.tech@gmail.com
+LinkedIn: linkedin.com/in/theharishpatel
+GitHub: github.com/Theharishpatel
 
-Location: Bangalore, India
-LinkedIn: linkedin.com/in/arjunsharma-dev
-GitHub: github.com/arjunsharma-dev
+-----------------------
+EXPERIENCE
+-----------------------
+Front-End Developer Intern
+Bridge Health Care Pvt. Ltd (Remote)
+June 2025 - November 2025
 
-Professional Summary
+- Developed and delivered 2+ production-ready client web applications.
+- Worked on frontend development, backend integration, and deployment.
+- Built responsive UI components using React.js, Next.js, Tailwind CSS, and Shadcn/UI.
+- Improved UI consistency and reduced development time by 25%.
+- Integrated backend services using PHP, MySQL, and MERN stack.
+- Deployed applications on Hostinger using GitHub workflows.
+- Debugged and optimized frontend performance.
+- Collaborated with cross-functional teams for scalable feature development.
 
-Full Stack Developer with 6 months of hands-on experience building scalable web applications using the MERN stack. Skilled in designing responsive user interfaces and developing REST APIs. Passionate about clean code, performance optimization, and building real-world products.
+-----------------------
+EDUCATION
+-----------------------
+B.Tech in Computer Science and Engineering
+Shri Vaishnav Vidhyapeeth Vishwavidhyalaya, Indore
+2021 - 2025
 
-Technical Skills
+Relevant Coursework:
+- Data Structures and Algorithms
+- Operating Systems
+- DBMS
 
-Frontend
+-----------------------
+TECHNICAL SKILLS
+-----------------------
+Languages:
+- C, C++, JavaScript
 
-HTML5
+Frontend:
+- React.js, Next.js, HTML, CSS3, TailwindCSS
 
-CSS3
+Backend:
+- Node.js, Express.js, REST APIs
 
-JavaScript (ES6+)
+Databases:
+- MongoDB, MySQL
 
-React.js
+Tools:
+- Git, GitHub, Linux (Ubuntu), Postman, VS Code, CI/CD (basic)
 
-Tailwind CSS
+-----------------------
+PROJECTS
+-----------------------
 
-Redux
+1. CoWatch (MERN Stack)
+- Built a real-time interaction platform for watching videos together.
+- Implemented virtual room creation and user flow.
+- Designed responsive UI for cross-device compatibility.
+- Prepared system for OTT integrations (Netflix, Prime Video).
 
-Backend
+2. Chenema (Netflix UI Clone)
+- Built pixel-perfect Netflix homepage clone using HTML & CSS.
+- Implemented responsive design across devices.
+- Focused on UI/UX and clean component structure.
 
-Node.js
+-----------------------
+ACHIEVEMENTS
+-----------------------
+- IBM Cloud Computing Certification (Coursera)
+- Gold Medalist (District Lagori Tournament)
+- NSS Member
+- Top 2% in Flipkart Grid 2.0
+`;
 
-Express.js
 
-Database
 
-MongoDB
+const selfDescription = `
+I am a passionate and self-driven Frontend Developer with hands-on experience in building real-world web applications using modern technologies like React, Next.js, and the MERN stack.
 
-MySQL
+I enjoy creating clean, scalable, and user-friendly interfaces while also understanding backend integrations and deployment workflows. During my internship, I worked on production-level applications, which helped me understand real-world development practices, debugging, and performance optimization.
 
-Tools & Platforms
+I am actively improving my skills in full-stack development, system design, and DevOps fundamentals. I have a strong interest in building impactful products, contributing to teams, and continuously learning new technologies.
 
-Git
+My strengths:
+- Strong UI/UX understanding
+- Fast learner and adaptable
+- Real project experience (not just tutorials)
+- Problem-solving mindset
 
-GitHub
+Currently, I am looking for opportunities where I can grow as a developer, contribute to meaningful projects, and work in a challenging environment.
+`;
 
-Docker (Basic)
 
-Postman
 
-VS Code
+const jobDescription = `
+Job Role: Frontend Developer (React / Next.js)
 
-Other Skills
+Company: Tech Startup (Product-Based)
 
-REST API Development
+Requirements:
 
-JWT Authentication
-
-Responsive Web Design
-
-Agile Methodology
-
-Work Experience
-
-Full Stack Developer Intern
-TechNova Solutions Pvt. Ltd. — Bangalore
-Jan 2025 – Jun 2025
+- Strong proficiency in JavaScript (ES6+)
+- Experience with React.js and Next.js
+- Good understanding of HTML, CSS, Tailwind or any CSS framework
+- Experience in building responsive and scalable UI
+- Familiarity with REST APIs and backend integration
+- Basic knowledge of Node.js and Express.js is a plus
+- Experience with Git and version control
 
 Responsibilities:
 
-Developed and maintained web applications using React.js and Node.js
+- Develop and maintain user-facing features
+- Build reusable components and libraries
+- Optimize applications for maximum speed and scalability
+- Collaborate with backend developers and designers
+- Debug and fix UI/UX issues
 
-Built RESTful APIs using Express.js and integrated MongoDB database
+Good to Have:
 
-Implemented JWT based authentication system for secure user login
+- Experience with TypeScript
+- Knowledge of system design basics
+- Familiarity with CI/CD pipelines
+- Understanding of performance optimization techniques
 
-Improved page load speed by 25% using lazy loading and optimized components
+Expected Candidate:
 
-Collaborated with UI/UX designers and backend developers in Agile environment
+- Strong problem-solving skills
+- Good communication
+- Ability to work in a fast-paced startup environment
+`;
 
-Fixed bugs and enhanced existing application features
 
-Projects
-1. TaskFlow – Task Management Web App
-
-Tech Stack: React, Node.js, Express, MongoDB
-
-Description:
-Built a productivity web application that allows users to manage daily tasks.
-
-Features:
-
-User authentication (JWT)
-
-Create, edit, delete tasks
-
-Task priority and status tracking
-
-Dashboard with analytics
-
-Responsive UI for mobile and desktop
-
-GitHub: github.com/arjunsharma-dev/taskflow
-
-2. DevConnect – Developer Social Platform
-
-Tech Stack: MERN Stack
-
-Description:
-A platform where developers can create profiles and connect with other developers.
-
-Features:
-
-Developer profile creation
-
-Post sharing and commenting
-
-Follow / unfollow developers
-
-GitHub profile integration
-
-REST API based backend
-
-GitHub: github.com/arjunsharma-dev/devconnect
-
-3. ShopEase – E-commerce Web Application
-
-Tech Stack: React, Node.js, MongoDB
-
-Features:
-
-Product listing and search
-
-Add to cart and checkout
-
-Order history
-
-Admin product dashboard
-
-Payment gateway integration (Stripe test mode)
-
-Education
-
-Bachelor of Technology (B.Tech) – Computer Science Engineering
-Visvesvaraya Institute of Technology
-2021 – 2025
-
-CGPA: 8.2 / 10
-
-Certifications
-
-Full Stack Web Development Certification — Udemy (2024)
-
-MongoDB Developer Certification — MongoDB University
-
-React.js Advanced Concepts — Coursera
-
-Extra Curricular Activities
-
-Participated in HackTheFuture Hackathon 2024
-
-Active contributor on GitHub Open Source Projects
-
-Organized coding event at college tech club
-
-Mentor for junior students in web development
-
-Achievements
-
-Built 3+ full stack applications during internship
-
-Solved 200+ coding problems on LeetCode
-
-Ranked Top 15 in university coding competition
-    `;
-
-const jobDescription = `
-      ROLE: Senior Full Stack Engineer (MERN)
-      COMPANY: InnovateX Global
-      
-      ABOUT THE ROLE:
-      We are looking for a Senior Developer to lead our core product team. You will be responsible 
-      for architecting new features and ensuring the scalability of our high-traffic platform.
-
-      KEY RESPONSIBILITIES:
-      - Lead the development of microservices using Node.js.
-      - Implement complex state management using Redux and TypeScript.
-      - Optimize database queries for MongoDB collections with millions of records.
-      - Set up and manage AWS cloud infrastructure (EC2, S3, RDS).
-      - Ensure 90%+ test coverage using Jest and Cypress.
-
-      REQUIREMENTS:
-      - 4+ years of experience with MERN stack.
-      - **Mandatory**: Deep proficiency in TypeScript.
-      - **Mandatory**: Experience with Cloud Services (AWS or Google Cloud).
-      - Strong knowledge of Redis for caching.
-      - Familiarity with Kubernetes or Docker Swarm.
-    `;
 
 module.exports = {
-    resume, selfDescription, jobDescription
-}
+  resume,
+  selfDescription,
+  jobDescription
+};
