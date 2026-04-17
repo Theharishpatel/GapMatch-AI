@@ -67,7 +67,18 @@ export const useInterview = () => {
             const url = window.URL.createObjectURL(new Blob([ response ], { type: "application/pdf" }))
             const link = document.createElement("a")
             link.href = url
-            link.setAttribute("download", `resume_${interviewReportId}.pdf`)
+           
+            const userName = report?.resume?.split("\n")[0] || "user"
+const role = report?.title || "role"
+
+// clean spaces
+const cleanUser = userName.replace(/\s+/g, "_")
+const cleanRole = role.replace(/\s+/g, "_")
+
+link.setAttribute(
+  "download",
+  `${cleanUser}_${cleanRole}_resume.pdf`
+)
             document.body.appendChild(link)
             link.click()
         }
