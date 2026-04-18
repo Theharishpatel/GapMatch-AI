@@ -65,7 +65,7 @@ async function generatePdfFromHtml(htmlContent) {
         ],
 
         executablePath: isProduction
-            ? process.env.PUPPETEER_EXECUTABLE_PATH
+            ? null
             : puppeteer.executablePath(),
     })
     const page = await browser.newPage();
