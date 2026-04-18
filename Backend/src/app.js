@@ -8,8 +8,12 @@ const app = express()
 
 app.use(express.json())
 app.use(cookieParser())
+
+const allowedOrigin = process.env.NODE_ENV === 'production' 
+            ? process.env.CLIENT_URL  // Aapki domain (e.g., https://gapmatch.ai)
+            : "http://localhost:5173";
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: allowedOrigin,
     credentials: true
 }))
 
@@ -22,6 +26,10 @@ const interviewRouter = require("./routes/interview.routes")
 app.use("/api/auth", authRouter)
 app.use("/api/interview", interviewRouter)
 
+
+app.get("/health", (req, res) => {
+    res.status(200).send("Server is healthy!");
+});
 
 
 
