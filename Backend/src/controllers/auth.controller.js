@@ -45,11 +45,11 @@ async function registerUserController(req, res) {
     )
 
     res.cookie("token", token, {
-        httpOnly: true,
-        secure: true,
-        sameSite: none,
-        maxAge: 24*60*60*1000
-    })
+    httpOnly: true,
+    secure: true,      // Must be true for HTTPS (Render/Vercel)
+    sameSite: "none",  // Cross-site cookie ke liye mandatory
+    maxAge: 24 * 60 * 60 * 1000 
+});
 
     res.status(201).json({
         message: "User registered successfully",
